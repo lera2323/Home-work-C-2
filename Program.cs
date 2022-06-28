@@ -5,95 +5,48 @@ namespace ConsolApp
 {
     class Program
     {
-        private static int index;
-
         static void Main( string[]args)
         {
             /*
+        // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-            // Задача 2. Даны два числа. Показать большее и меньшее.
+        Console.WriteLine ("Введите число");
 
-            int a = 27;
-            int b = 3;
+        string number = Console.ReadLine();
         
+        if (number.Length < 3)
+        {
+            Console.WriteLine ("Третьей цифры нет");
+        }
+        else
+        {
+            Console.WriteLine ("Третья цифра " + number [2]);
+        }
+        */
 
-            if (a > b)
-
+        // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+        
+        int day = 4;
+        Day15Zadacha(day);
+        day = 7;
+        Day15Zadacha(day);
+        Console.WriteLine ();
+        Console.WriteLine ();
+        void Day15Zadacha(int currentDay)
+   
+        {
+            Console.WriteLine ("__________________");
+            Console.WriteLine ("Задача 15");
+            if (currentDay == 6 || currentDay == 7)
             {
-                Console.WriteLine ("min: " + b);
-                Console.WriteLine ("max: " + a);
+                Console.WriteLine ("Выходной");
             }
             else
             {
-                Console.WriteLine ("min: " + a);
-                Console.WriteLine ("max: " + b);
-                
-            }
-            */
-
-            /*
-
-            // Задача 4. Найти максимальное из 3х чисел.
-
-            int a = 5;
-            int b = 45;
-            int c = 38;
-            int max = a;
-
-            if (max < b)
-            {
-                max = b;
-            }
-            if (max < c)
-            {
-                max = c;
+                Console.WriteLine ("Рабочий день");
             }
 
-            Console.WriteLine ("maximum: " + max);
-
-            */
-            /*
-
-
-            // Задача 4. Выяснить является ли число четным.
-
-            int a = 5;
-            
-            if (a%2 == 0)
-            {
-                Console.WriteLine (a + " is correct");
-            
-            }
-
-            else
-            {
-                Console.WriteLine (a + " is not correct");
-            }
-
-            */
-
-            // Показать четные числа от 1 до N.
-
-            int a = 13;
-            int b = 2;
-            
-            while (b < a)
-            {
-                Console.WriteLine (b);
-                b += 2;
-            }
-
-
-
-
-
-
-
-
-
-
-
-
+        }
 
 
 
